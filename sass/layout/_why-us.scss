@@ -1,6 +1,8 @@
 .why-us {
   position: absolute;
   top: 1548px;
+  //по макету 1463px, но в 3 семестре впервых 2-х programm__study-section-title margin 10px
+  // а также в 5 семестре, во всех остальных по 5px. Сделала всем по 5px.
   left: 50%;
   transform: translateX(-50%);
   width: 320px;

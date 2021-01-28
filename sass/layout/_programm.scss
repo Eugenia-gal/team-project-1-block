@@ -5,10 +5,9 @@
 }
 
 .wrapper__position {
+  position: relative;
   width: 100%;
   margin: 0 auto;
-  // outline: 3px solid green;
-  position: relative;
   background-image: url(../../images/our_program/women_our_program.png);
   background-repeat: no-repeat;
   background-size: 176px 137px;
@@ -55,7 +54,6 @@
     width: 12px;
     height: 91px;
     background-color: var(--black-color);
-    // outline: 1px solid green;
   }
 }
 
@@ -98,10 +96,6 @@
 
   margin-bottom: 5px;
 }
-
-// .programm__study-subject-list {
-
-// }
 
 .programm__study-section-list-item:not(:last-child) {
   margin-bottom: 8px;

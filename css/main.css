@@ -72,9 +72,9 @@ ol {
 }
 
 .wrapper__position {
+  position: relative;
   width: 100%;
   margin: 0 auto;
-  position: relative;
   background-image: url(../../images/our_program/women_our_program.png);
   background-repeat: no-repeat;
   background-size: 176px 137px;
