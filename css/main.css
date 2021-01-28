@@ -121,7 +121,7 @@ ol {
   background-color: var(--black-color);
 }
 
-.programm__semester-list-item {
+.programm__semester-list-item:not(:last-child) {
   margin-bottom: 40px;
 }
 
@@ -157,7 +157,7 @@ ol {
   margin-bottom: 5px;
 }
 
-.programm__study-subject-list {
+.programm__study-section-list-item:not(:last-child) {
   margin-bottom: 8px;
 }
 
@@ -190,7 +190,7 @@ ol {
 
 .why-us {
   position: absolute;
-  top: 1563px;
+  top: 1548px;
   left: 50%;
   transform: translateX(-50%);
   width: 320px;

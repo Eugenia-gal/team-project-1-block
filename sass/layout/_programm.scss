@@ -59,7 +59,7 @@
   }
 }
 
-.programm__semester-list-item {
+.programm__semester-list-item:not(:last-child) {
   margin-bottom: 40px;
 }
 
@@ -99,7 +99,11 @@
   margin-bottom: 5px;
 }
 
-.programm__study-subject-list {
+// .programm__study-subject-list {
+
+// }
+
+.programm__study-section-list-item:not(:last-child) {
   margin-bottom: 8px;
 }
 
