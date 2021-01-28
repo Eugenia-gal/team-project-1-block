@@ -39,7 +39,6 @@ ol {
   padding-right: 15px;
   padding-left: 15px;
   margin: 0 auto;
-  outline: 1px solid red;
 }
 
 @media screen and (min-width: 320px) {
@@ -68,9 +67,20 @@ ol {
 
 .programm {
   background-color: var(--black-color);
+  color: var(--white-color);
+  margin-bottom: 270px;
+}
+
+.wrapper__position {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  background-image: url(../../images/our_program/women_our_program.png);
+  background-repeat: no-repeat;
+  background-size: 176px 137px;
+  background-position: left 200px top 1458px;
   padding-top: 50px;
   padding-bottom: 537px;
-  color: var(--white-color);
 }
 
 .programm__title {
@@ -83,9 +93,32 @@ ol {
 }
 
 .programm__semester-list {
+  position: relative;
   border-left: 1px solid var(--white-color);
   padding-left: 20px;
   margin-left: 67px;
+}
+
+.programm__semester-list:before {
+  position: absolute;
+  top: -1px;
+  left: -6px;
+  content: '';
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-color: var(--black-color);
+}
+
+.programm__semester-list:after {
+  position: absolute;
+  bottom: -1px;
+  left: -6px;
+  content: '';
+  display: block;
+  width: 12px;
+  height: 91px;
+  background-color: var(--black-color);
 }
 
 .programm__semester-list-item {
@@ -93,12 +126,26 @@ ol {
 }
 
 .programm__semester-list-title {
+  position: relative;
   font-weight: 700;
   font-size: 14px;
   line-height: 2;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   margin-bottom: 5px;
+}
+
+.programm__semester-list-title::before {
+  position: absolute;
+  top: 50%;
+  left: -26px;
+  transform: translateY(-50%);
+  content: '';
+  background-color: var(--orange-color);
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
 }
 
 .programm__study-section-title {
@@ -123,6 +170,33 @@ ol {
   opacity: 0.5;
 }
 
+@media screen and (min-width: 320px) {
+  .wrapper__position {
+    max-width: 320px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper__position {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1344px) {
+  .wrapper__position {
+    max-width: 1344px;
+  }
+}
+
+.why-us {
+  position: absolute;
+  top: 1563px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 320px;
+  margin-bottom: 39px;
+}
+
 .why-us__title {
   font-weight: 800;
   font-size: 20px;
@@ -130,6 +204,7 @@ ol {
   padding-right: 30px;
   margin-bottom: 30px;
   letter-spacing: 0.03em;
+  color: var(--white-color);
 }
 
 .why-us__list {
