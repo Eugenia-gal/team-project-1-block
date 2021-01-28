@@ -1,0 +1,50 @@
+.why-us__title {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.36;
+  padding-right: 30px;
+  margin-bottom: 30px;
+
+  letter-spacing: 0.03em;
+
+  // color: var(--white-color);
+}
+
+.why-us__list {
+  padding-top: 20px;
+  padding-right: 14px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+
+  counter-reset: section;
+
+  background: var(--white-color);
+  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+}
+
+.why-us__list-item {
+  margin-bottom: 20px;
+
+  &::before {
+    counter-increment: section;
+    content: '— 0' counter(section);
+    display: inline-block;
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.649;
+    letter-spacing: 0.08em;
+
+    color: var(--orange-color);
+  }
+}
+
+.why-us__description {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 0.08em;
+
+  color: var(--black-color);
+}
