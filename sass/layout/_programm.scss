@@ -147,12 +147,14 @@
     background-position: left 384px top 822px;
     background-image: url(../../images/our_program/women_our_program-tablet.png);
     background-size: 384px 280px;
+    padding-top: 60px;
   }
 
   .programm__title {
     text-align: left;
     font-size: 26px;
     line-height: 1.3;
+    margin-bottom: 52px;
   }
 
   .programm__semester-list {
@@ -166,6 +168,10 @@
     }
   }
 
+  .programm__semester-list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
   .programm__study-section-list {
     display: flex;
   }
@@ -175,11 +181,15 @@
     margin-right: 50px;
 
     &:first-child {
-      width: 176px;
+      width: 182px;
     }
 
     &:nth-child(2) {
       width: 155px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 0;
     }
   }
 
