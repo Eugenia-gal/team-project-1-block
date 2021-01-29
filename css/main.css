@@ -201,6 +201,10 @@ ol {
     background-image: url(../../images/our_program/women_our_program-tablet.png);
     background-size: 384px 280px;
     padding-top: 60px;
+    padding-bottom: 392px;
+  }
+  .programm {
+    margin-bottom: 302px;
   }
   .programm__title {
     text-align: left;
@@ -267,14 +271,17 @@ ol {
   color: var(--white-color);
 }
 
-.why-us__list {
+.why-us__list-wrapper {
   padding-top: 20px;
   padding-right: 14px;
   padding-bottom: 20px;
   padding-left: 30px;
-  counter-reset: section;
   background: var(--white-color);
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+}
+
+.why-us__list {
+  counter-reset: section;
 }
 
 .why-us__list-item {
@@ -299,5 +306,35 @@ ol {
   line-height: 1.43;
   letter-spacing: 0.08em;
   color: var(--black-color);
+}
+
+@media screen and (min-width: 768px) {
+  .why-us {
+    top: 1152px;
+    width: 768px;
+  }
+  .why-us__title {
+    font-size: 26px;
+    line-height: 1.3;
+    padding-right: 0;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .why-us__list-wrapper {
+    padding-top: 30px;
+    padding-right: 98px;
+    padding-bottom: 25px;
+    padding-left: 98px;
+  }
+  .why-us__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: -30px;
+  }
+  .why-us__list-item {
+    width: calc((100% - 20px) / 2);
+    margin-bottom: 30px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
