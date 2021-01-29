@@ -8,9 +8,9 @@
   position: relative;
   width: 100%;
   margin: 0 auto;
-  background-image: url(../../images/our_program/women_our_program.png);
+  background-image: url(../../images/our_program/women_our_program-mobile.png);
   background-repeat: no-repeat;
-  background-size: 176px 137px;
+  background-size: 120px 137px;
   background-position: left 200px top 1473px;
   padding-top: 50px;
   padding-bottom: 537px;
@@ -125,6 +125,16 @@
   margin-bottom: 10px;
 }
 
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (-webkit-min-device-pixel-ratio: 2),
+  screen and (-o-min-device-pixel-ratio: 2/1),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .wrapper__position {
+    background-image: url(../../images/our_program/women_our_program-mobile@2x.png);
+  }
+}
+
 @media screen and (min-width: 320px) {
   .wrapper__position {
     max-width: 320px;
@@ -134,21 +144,58 @@
 @media screen and (min-width: 768px) {
   .wrapper__position {
     max-width: 768px;
+    background-position: left 384px top 822px;
+    background-image: url(../../images/our_program/women_our_program-tablet.png);
+    background-size: 384px 280px;
+  }
+
+  .programm__title {
+    text-align: left;
+    font-size: 26px;
+    line-height: 1.3;
+  }
+
+  .programm__semester-list {
+    margin-left: 63px;
+    padding-left: 56px;
+  }
+
+  .programm__semester-list-title {
+    &:before {
+      left: -62px;
+    }
+  }
+
+  .programm__study-section-list {
+    display: flex;
+  }
+
+  .programm__study-section-list-item {
+    display: block;
+    margin-right: 50px;
+
+    &:first-child {
+      width: 176px;
+    }
+
+    &:nth-child(2) {
+      width: 155px;
+    }
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .wrapper__position {
+      background-image: url(../../images/our_program/women_our_program-tablet@2x.png);
+    }
   }
 }
 
 @media screen and (min-width: 1344px) {
   .wrapper__position {
     max-width: 1344px;
-  }
-}
-
-@media screen and (min-device-pixel-ratio: 2),
-  screen and (-webkit-min-device-pixel-ratio: 2),
-  screen and (-o-min-device-pixel-ratio: 2/1),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-  .wrapper__position {
-    background-image: url(../../images/our_program/women_our_program@2x.png);
   }
 }
