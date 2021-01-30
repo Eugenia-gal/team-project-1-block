@@ -4,7 +4,6 @@
   left: 50%;
   transform: translateX(-50%);
   width: 320px;
-  margin-bottom: 39px;
 }
 
 .why-us__title {
@@ -47,10 +46,6 @@
 
     color: var(--orange-color);
   }
-
-  &:not(:last-child) {
-    margin-bottom: 20px;
-  }
 }
 
 .why-us__description {
@@ -60,6 +55,14 @@
   letter-spacing: 0.08em;
 
   color: var(--black-color);
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .why-us__list-item {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
 }
 
 @media screen and (min-width: 768px) {
