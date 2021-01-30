@@ -8,7 +8,7 @@
 
 .wrapper__position {
   position: relative;
-  width: 100%;
+  // width: 100%;
   margin: 0 auto;
   background-image: url(../images/our_program/women_our_program-mobile.png);
   background-repeat: no-repeat;
@@ -210,10 +210,10 @@
 @media screen and (min-width: 1344px) {
   .wrapper__position {
     position: static;
-    max-width: 1680px;
+    max-width: 1344px;
     background-image: url(../images/our_program/women_our_program-desk.png);
     background-size: 672px 502px;
-    background-position: left -88px top 676px;
+    background-position: left -25% top 676px;
     padding-top: 120px;
     padding-bottom: 363px;
   }
@@ -234,10 +234,8 @@
     justify-content: space-between;
 
     border-left: none;
-    // border-top: 1px solid var(--white-color);
     padding-left: 0;
     margin-left: 0;
-    // margin-right: -30px;
     padding-top: 60px;
 
     &:before {
@@ -252,13 +250,6 @@
 
     &:after {
       display: none;
-      top: -1px;
-      // bottom: 100%;
-      left: 100%;
-      content: '';
-      width: 100vw;
-      height: 1px;
-      background-color: red;
     }
   }
 
@@ -283,7 +274,6 @@
 
   .programm__semester-list-item {
     width: calc((100% - 4 * 27px) / 5);
-    // margin-right: 30px;
   }
 
   .programm__semester-list-item:not(:last-child) {
@@ -321,6 +311,16 @@
     font-size: 18px;
     line-height: 1.56;
   }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .wrapper__position {
+      background-image: url(../images/our_program/women_our_program-deskt@2x.png);
+    }
+  }
 }
 
 @media screen and (min-device-pixel-ratio: 2),
@@ -329,6 +329,6 @@
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
   .wrapper__position {
-    background-image: url(../../images/our_program/women_our_program-mobile@2x.png);
+    background-image: url(../images/our_program/women_our_program-mobile@2x.png);
   }
 }

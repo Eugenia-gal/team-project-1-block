@@ -34,8 +34,6 @@
 }
 
 .why-us__list-item {
-  margin-bottom: 20px;
-
   &::before {
     counter-increment: section;
     content: '— 0' counter(section);
@@ -48,6 +46,10 @@
     letter-spacing: 0.08em;
 
     color: var(--orange-color);
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
   }
 }
 
