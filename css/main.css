@@ -246,10 +246,11 @@ ol {
 /*-------------MEDIA-RULES FOR DESKTOP -------------*/
 @media screen and (min-width: 1344px) {
   .wrapper__position {
+    position: static;
     max-width: 1680px;
     background-image: url(../../images/our_program/women_our_program-desk.png);
     background-size: 672px 502px;
-    background-position: right 1008px top 676px;
+    background-position: left -88px top 676px;
     padding-top: 120px;
     padding-bottom: 363px;
   }
@@ -262,30 +263,31 @@ ol {
     margin-bottom: 100px;
   }
   .programm__semester-list {
+    position: static;
     display: flex;
     justify-content: space-between;
     border-left: none;
-    border-top: 1px solid var(--white-color);
     padding-left: 0;
     margin-left: 0;
     padding-top: 60px;
   }
   .programm__semester-list:before {
-    top: -1px;
-    left: -500px;
+    top: 278px;
+    left: 0;
     content: '';
     display: block;
-    width: 500px;
+    width: 100vw;
     height: 1px;
     background-color: var(--white-color);
   }
   .programm__semester-list:after {
-    bottom: 100%;
+    display: none;
+    top: -1px;
     left: 100%;
     content: '';
-    max-width: 50px;
+    width: 100vw;
     height: 1px;
-    background-color: var(--white-color);
+    background-color: red;
   }
   .programm__semester-list-title-number {
     font-size: 30px;
@@ -424,6 +426,45 @@ ol {
   .why-us__list-item {
     width: calc((100% - 20px) / 2);
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1344px) {
+  .why-us {
+    top: 1038px;
+    width: 1344px;
+  }
+  .why-us__title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  .why-us__list-wrapper {
+    padding-top: 70px;
+    padding-right: 82px;
+    padding-bottom: 70px;
+    padding-left: 84px;
+  }
+  .why-us__list {
+    margin-bottom: -32px;
+  }
+  .why-us__list-item {
+    width: calc((100% - 2 * 40px) / 3);
+    margin-bottom: 32px;
+  }
+  .why-us__list-item::before {
+    font-size: 20px;
+  }
+  .why-us__description {
+    font-size: 20px;
+    line-height: 1.4;
   }
 }
 /*# sourceMappingURL=main.css.map */

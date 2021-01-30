@@ -209,10 +209,11 @@
 
 @media screen and (min-width: 1344px) {
   .wrapper__position {
+    position: static;
     max-width: 1680px;
     background-image: url(../../images/our_program/women_our_program-desk.png);
     background-size: 672px 502px;
-    background-position: right 1008px top 676px;
+    background-position: left -88px top 676px;
     padding-top: 120px;
     padding-bottom: 363px;
   }
@@ -228,33 +229,36 @@
   }
 
   .programm__semester-list {
+    position: static;
     display: flex;
     justify-content: space-between;
 
     border-left: none;
-    border-top: 1px solid var(--white-color);
+    // border-top: 1px solid var(--white-color);
     padding-left: 0;
     margin-left: 0;
     // margin-right: -30px;
     padding-top: 60px;
 
     &:before {
-      top: -1px;
-      left: -500px;
+      top: 278px;
+      left: 0;
       content: '';
       display: block;
-      width: 500px;
+      width: 100vw;
       height: 1px;
       background-color: var(--white-color);
     }
 
     &:after {
-      bottom: 100%;
+      display: none;
+      top: -1px;
+      // bottom: 100%;
       left: 100%;
       content: '';
-      max-width: 50px;
+      width: 100vw;
       height: 1px;
-      background-color: var(--white-color);
+      background-color: red;
     }
   }
 
