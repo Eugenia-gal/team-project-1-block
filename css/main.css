@@ -76,7 +76,7 @@ ol {
   position: relative;
   width: 100%;
   margin: 0 auto;
-  background-image: url(../../images/our_program/women_our_program-mobile.png);
+  background-image: url(../images/our_program/women_our_program-mobile.png);
   background-repeat: no-repeat;
   background-size: 120px 137px;
   background-position: left 200px top 1473px;
@@ -195,7 +195,7 @@ ol {
   .wrapper__position {
     max-width: 768px;
     background-position: left 384px top 822px;
-    background-image: url(../../images/our_program/women_our_program-tablet.png);
+    background-image: url(../images/our_program/women_our_program-tablet.png);
     background-size: 384px 280px;
     padding-top: 60px;
     padding-bottom: 392px;
@@ -248,7 +248,7 @@ ol {
   .wrapper__position {
     position: static;
     max-width: 1680px;
-    background-image: url(../../images/our_program/women_our_program-desk.png);
+    background-image: url(../images/our_program/women_our_program-desk.png);
     background-size: 672px 502px;
     background-position: left -88px top 676px;
     padding-top: 120px;
